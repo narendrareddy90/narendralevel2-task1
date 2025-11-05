@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 2 - Task 1: Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Left Side -->
+    <div class="left">
+      <h1>LEVEL 2</h1>
+      <h2>TASK 1</h2>
+      <div class="icon">💻</div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="right">
+      <h3>CALCULATOR</h3>
+      <p>
+        It takes a little skill to create a calculator with basic mathematical functionalities using
+        CSS, HTML, and JavaScript. Calculators require an interactive interface to perform basic functions
+        such as addition, subtraction, division, and multiplication. It will need a display screen to
+        display the user’s input and give the results. The grid system in CSS is for the alignment of buttons
+        on the calculator.
+      </p>
+
+      <p>
+        The additional tools you need to build a fully functional calculator include
+        <code>eventListeners</code>, <code>if-else</code> statements, operators, and loops.
+      </p>
+
+      <div class="calculator">
+        <input type="text" id="display" readonly />
+        <div class="buttons">
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="deleteChar()">DEL</button>
+          <button onclick="appendValue('%')">%</button>
+          <button onclick="appendValue('/')">÷</button>
+
+          <button onclick="appendValue('7')">7</button>
+          <button onclick="appendValue('8')">8</button>
+          <button onclick="appendValue('9')">9</button>
+          <button onclick="appendValue('*')">×</button>
+
+          <button onclick="appendValue('4')">4</button>
+          <button onclick="appendValue('5')">5</button>
+          <button onclick="appendValue('6')">6</button>
+          <button onclick="appendValue('-')">−</button>
+
+          <button onclick="appendValue('1')">1</button>
+          <button onclick="appendValue('2')">2</button>
+          <button onclick="appendValue('3')">3</button>
+          <button onclick="appendValue('+')">+</button>
+
+          <button onclick="appendValue('0')" class="zero">0</button>
+          <button onclick="appendValue('.')">.</button>
+          <button onclick="calculate()">=</button>
+        </div>
+      </div>
+
+      <p>For Demo <a href="#">Click</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
